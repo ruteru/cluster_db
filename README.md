@@ -1,16 +1,12 @@
 # Instruccions for use
 
-### Clone the repository
-```git clone https://github.com/ruteru/cluster_db.git```
-
-### Create venv
-```python3 -m venv venv```
-
-### Activate venv
-```venv/scripts/activate```
-
-### install requirements
-```pip install -r requirements.txt```
+### Clone the repository and activate your virtual environment
+```
+git clone https://github.com/ruteru/cluster_db.git
+python3 -m venv venv
+venv/scripts/activate
+pip install -r requirements.txt
+```
 
 ### run to test locally:
 ```python users_db.py```
