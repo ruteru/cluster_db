@@ -15,5 +15,7 @@ pip install -r requirements.txt
 ```kubectl get svc proxysql```
 
 ### run on the cluster network
-```kubectl run -i --tty --rm debug --image=ubuntu -- bash```
-```telnet proxysql 6033```
+```
+kubectl run -i --tty --rm debug --image=ubuntu -- bash
+telnet proxysql 6033
+```
