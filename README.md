@@ -1,23 +1,23 @@
 # Instruccions for use
 
-## Clone the repository
+### Clone the repository
 git clone https://github.com/ruteru/cluster_db.git
 
-## Create venv
+### Create venv
 python3 -m venv venv
 
-## Activate venv
+### Activate venv
 venv/scripts/activate
 
-## install requirements
+### install requirements
 pip install -r requirements.txt
 
-## run to test locally:
+### run to test locally:
 python users_db.py
 
-## replace host and port by cluster ip and cluster port
+### replace host and port by cluster ip and cluster port
 kubectl get svc proxysql
 
-## run on the cluster network
+### run on the cluster network
 kubectl run -i --tty --rm debug --image=ubuntu -- bash
 telnet proxysql 6033 
