@@ -1,5 +1,7 @@
 import MySQLdb
 
+# a connection for a MariaDB instance should be done to test locally, 
+# then provide the cluster-ip by running the following command "kubectl get svc proxysql"
 connection = MySQLdb.connect(
     host="localhost",
     port=5000,
